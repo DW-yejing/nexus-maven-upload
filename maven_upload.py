@@ -21,7 +21,7 @@ repo_browse_url = None
 specified = None
 
 def doUpload():
-    if specified==True :
+    if specified.upper()=='TRUE' :
         dependencies = getSpecifiedDependencies()
         for path in dependencies:
             uploadLocalRepo(path)
