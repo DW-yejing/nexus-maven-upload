@@ -24,7 +24,7 @@ def doUpload():
     if specified.upper()=='TRUE' :
         dependencies = getSpecifiedDependencies()
         for path in dependencies:
-            uploadLocalRepo(path)
+            uploadLocalRepo(path.strip())
     else:
         uploadLocalRepo(upload_repo_path)
 
